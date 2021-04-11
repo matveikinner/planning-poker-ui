@@ -76,8 +76,8 @@ env:
 
 plugins:
   - '@typescript-eslint'
-  - prettier
   - jest
+  - prettier
 
 extends:
   - airbnb-typescript
@@ -85,12 +85,12 @@ extends:
   - plugin:react/recommended
   - plugin:@typescript-eslint/recommended
   - plugin:@typescript-eslint/recommended-requiring-type-checking
+  - plugin:jest/recommended
+  - plugin:jest/style
   - prettier
   - prettier/react
   - prettier/@typescript-eslint
   - plugin:prettier/recommended
-  - plugin:jest/recommended
-  - plugin:jest/style
 
 # ----------------------------------------------------------------------------------------------------------------------
 # RULES

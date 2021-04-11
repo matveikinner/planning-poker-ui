@@ -14,6 +14,7 @@ interface Configuration extends WebpackConfiguration {
 const rootDir = path.resolve(__dirname, '..', '..');
 
 const devServer: WebpackDevServerConfiguration = {
+  historyApiFallback: true,
   hot: true,
   https: false,
   liveReload: true,
@@ -29,6 +30,7 @@ const webpackConfig = (): Configuration => ({
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
       '@core': path.resolve(rootDir, 'core'),
+      '@poker': path.resolve(rootDir, 'poker'),
     },
   },
   output: {
